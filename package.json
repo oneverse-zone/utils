@@ -1,0 +1,62 @@
+{
+  "name": "@oneverse/utils",
+  "description": "OneVerse utils",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Sean",
+  "type": "module",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "files": [
+    "es",
+    "lib",
+    "package.json",
+    "README.md"
+  ],
+  "exports": {
+    "./hex": {
+      "require": "./lib/hex.js",
+      "import": "./es/hex.js"
+    },
+    "./mnemonic": {
+      "require": "./lib/mnemonic.js",
+      "import": "./es/mnemonic.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build:mjs": "tsc",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build": "yarn build:cjs && yarn build:mjs",
+    "format": "prettier --write \"src/**/*.[jt]s\"",
+    "release": "semantic-release --debug --ci=false",
+    "prepare": "yarn build"
+  },
+  "dependencies": {},
+  "optionalDependencies": {
+    "@ethersproject/hdnode": "^5.6.2",
+    "@stablelib/random": "^1.0.1",
+    "uint8arrays": "^3.0.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "28.1.1",
+    "prettier": "^2.6.2",
+    "semantic-release": "^19.0.3",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:oneverse-zone/utils.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
