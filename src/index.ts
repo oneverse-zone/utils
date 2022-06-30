@@ -1,3 +1,3 @@
-export * from './date';
-export * from './hex';
-export * from './mnemonic';
+export * from './date.js';
+export * from './hex.js';
+export * from './mnemonic.js';
