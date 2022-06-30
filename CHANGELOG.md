@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/oneverse-zone/utils/compare/1.1.1...1.1.2) (2022-06-30)
+
+
+### Bug Fixes
+
+* 导出错误修复 ([e7dbf72](https://github.com/oneverse-zone/utils/commit/e7dbf729370d72ebf547bc7fa3569ae86ed3d040))
+
 ## [1.1.1](https://github.com/oneverse-zone/utils/compare/1.1.0...1.1.1) (2022-06-30)
 
 
