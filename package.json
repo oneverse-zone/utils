@@ -1,7 +1,7 @@
 {
   "name": "@oneverse/utils",
   "description": "OneVerse utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": "Sean",
   "type": "module",
