@@ -25,25 +25,36 @@ export function randomMnemonic(
   return entropyToMnemonic(entropy, wordlist);
 }
 
+export type Option = {
+  password?: string;
+  iterations?: number;
+  keyLen?: number;
+};
+
 /**
  * 助记词转换为秘钥种子
  * @param mnemonic 助记词
- * @param password 密码
- * @param iterations
- * @param keyLen 秘钥长度
+ * @param option
  */
 export function mnemonicToSeed(
   mnemonic: string,
-  {
-    password,
-    iterations = 2048,
-    keyLen = 32,
-  }: {
+  option?: {
+    /**
+     * 密码
+     */
     password?: string;
-    iterations: number;
-    keyLen: number;
+    /**
+     * 2024
+     */
+    iterations?: number;
+    /**
+     * key 长度
+     * 32
+     */
+    keyLen?: number;
   },
 ): Uint8Array {
+  let { password, iterations = 2048, keyLen = 32 } = option || {};
   if (!password) {
     password = '';
   }
