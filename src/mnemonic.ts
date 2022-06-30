@@ -25,12 +25,6 @@ export function randomMnemonic(
   return entropyToMnemonic(entropy, wordlist);
 }
 
-export type Option = {
-  password?: string;
-  iterations?: number;
-  keyLen?: number;
-};
-
 /**
  * 助记词转换为秘钥种子
  * @param mnemonic 助记词
