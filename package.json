@@ -27,7 +27,8 @@
   "scripts": {
     "build:mjs": "tsc",
     "build:cjs": "tsc -p tsconfig.cjs.json",
-    "build": "yarn build:cjs && yarn build:mjs",
+    "clean": "rm -rf es && rm -rf lib",
+    "build": "yarn clean && yarn build:cjs && yarn build:mjs",
     "format": "prettier --write \"src/**/*.[jt]s\"",
     "release": "semantic-release --debug --ci=false",
     "prepare": "yarn build"
