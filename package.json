@@ -14,6 +14,10 @@
     "README.md"
   ],
   "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./es/index.js"
+    },
     "./hex": {
       "require": "./lib/hex.js",
       "import": "./es/hex.js"
