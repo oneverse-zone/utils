@@ -1,3 +1,10 @@
+# 1.0.0 (2022-06-30)
+
+
+### Features
+
+* init ([f1af52b](https://github.com/oneverse-zone/utils/commit/f1af52bc806675fcc89dca92a59a759f08d6d256))
+
 ## [1.1.2](https://github.com/oneverse-zone/identity/compare/1.1.1...1.1.2) (2022-06-12)
 
 
